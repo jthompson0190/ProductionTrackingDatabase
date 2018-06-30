@@ -54,7 +54,7 @@ include_once 'includes/crepetable.inc.php';
 							<ul class="list-group list-group-flush">
 								<li class="nav-item">
 									<a class="nav-link" href="CrepeProductionForm.php">
-									Crepe Production Form
+									Crepe Production Forms
 									<a/>
 								</li>	
 								<li class="nav-item">
