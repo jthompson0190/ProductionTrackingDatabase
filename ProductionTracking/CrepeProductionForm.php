@@ -179,68 +179,51 @@ include_once 'includes/crepetable.inc.php';
 					<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
 						<h1 class="h2">Grade Information Form</h1>
 						</div>
-						<form>
+						<form action="includes/crepeform.inc.php" method="POST" autocomplete="off">
 						<div class="form-row">
 							<div class="form-group col-md-6">
 							<label for="inputPO">PO Number</label>
-							<input type="inputPO" class="form-control" id="inputPO" placeholder="PO Number">
+							<input type="text" class="form-control" name="inputPO" placeholder="PO Number">
 							</div>
 							<div class="form-group col-md-6">
 							<label for="inputDate">Date</label>
-							<input type="inputDate" class="form-control" id="inputDate" placeholder="Date">
+							<input type="date" class="form-control" name="inputDate" placeholder="Date">
 							</div>
 						</div>
 						<div class="form-row">
 							<div class="form-group col-md-4">
 							<label for="inputGrade">Grade</label>
-							<select id="inputGrade" class="form-control">
-								<option selected>Choose Grade..</option>
-								<option>...</option>
-							</select>
+							<input type="text" name="inputGrade" class="form-control" placeholder="Grade">
 							</div>
 							<div class="form-group col-md-4">
 							<label for="inputGradeCode">Grade Code</label>
-							<input type="gradeCode" class="form-control" id="inputGradeCode" placeholder="Grade Code">
+							<input type="text" class="form-control" name="inputGradeCode" placeholder="Grade Code">
 							</div>
 							<div class="form-group col-md-4">
-							<label for="inputPassword4">Base Paper</label>
-							<input type="basePaper" class="form-control" id="inputBasePaper" placeholder="Base Paper">
+							<label for="inputbasePaper">Base Paper</label>
+							<input type="text" class="form-control" name="inputBasePaper" placeholder="Base Paper">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="inputAddress">Address</label>
-							<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+							<label for="inputcore">Core</label>
+							<input type="text" class="form-control" name="inputCore" placeholder="Core Type">
 						</div>
 						<div class="form-group">
-							<label for="inputAddress2">Address 2</label>
-							<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+							<label for="inputCoreOD">Core OD</label>
+							<input type="text" class="form-control" name="inputCoreOD" placeholder="Core OD">
 						</div>
 						<div class="form-row">
 							<div class="form-group col-md-6">
-							<label for="inputCity">City</label>
-							<input type="text" class="form-control" id="inputCity">
+							<label for="inputCaliper">Caliper</label>
+							<input type="text" class="form-control" name="inputCaliper">
 							</div>
 							<div class="form-group col-md-4">
-							<label for="inputState">State</label>
-							<select id="inputState" class="form-control">
-								<option selected>Choose...</option>
-								<option>...</option>
-							</select>
-							</div>
-							<div class="form-group col-md-2">
-							<label for="inputZip">Zip</label>
-							<input type="text" class="form-control" id="inputZip">
+							<label for="inputRollWidth">Roll Width</label>
+							<input type="text" name="inputRollWidth" class="form-control" placeholder="Roll Width">
+
 							</div>
 						</div>
-						<div class="form-group">
-							<div class="form-check">
-							<input class="form-check-input" type="checkbox" id="gridCheck">
-							<label class="form-check-label" for="gridCheck">
-								Check me out
-							</label>
-							</div>
-						</div>
-						<button type="submit" class="btn btn-primary">Submit</button>
+						<button type="submit" name='submit' class="btn btn-primary">Submit</button>
 						</form>
 
 				</div>		
@@ -269,12 +252,12 @@ include_once 'includes/crepetable.inc.php';
 						</div>
 						<div class="form-row">
 							<div class="form-group col-md-6">
-							<label for="inputCity">City</label>
-							<input type="text" class="form-control" id="inputCity">
+							<label for="inputCaliper">Caliper</label>
+							<input type="text" class="form-control" id="inputCaliper">
 							</div>
 							<div class="form-group col-md-4">
-							<label for="inputState">State</label>
-							<select id="inputState" class="form-control">
+							<label for="inputRollWidth">RollWidth</label>
+							<select id="inputRollWidth" class="form-control">
 								<option selected>Choose...</option>
 								<option>...</option>
 							</select>
@@ -321,12 +304,12 @@ include_once 'includes/crepetable.inc.php';
 						</div>
 						<div class="form-row">
 							<div class="form-group col-md-6">
-							<label for="inputCity">City</label>
-							<input type="text" class="form-control" id="inputCity">
+							<label for="inputCaliper">Caliper</label>
+							<input type="text" class="form-control" id="inputCaliper">
 							</div>
 							<div class="form-group col-md-4">
-							<label for="inputState">State</label>
-							<select id="inputState" class="form-control">
+							<label for="inputRollWidth">RollWidth</label>
+							<select id="inputRollWidth" class="form-control">
 								<option selected>Choose...</option>
 								<option>...</option>
 							</select>
