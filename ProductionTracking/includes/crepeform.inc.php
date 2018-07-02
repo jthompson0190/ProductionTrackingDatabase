@@ -23,8 +23,8 @@ if (isset($_POST['submit'])){
         exit();
     } else {
 		//Insert the user into the database
-		$sql = "INSERT INTO crepedailyproduction(productionOrder, crepeDate, grade, gradeCode, basePaper, coreType, coreOD, caliper, rollWidth) 
-		VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);";
+		$sql =  "INSERT INTO crepedailyproduction(productionOrder, crepeDate, grade, gradeCode, basePaper, coreType, coreOD, caliper, rollWidth) 
+		VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		$stmt = mysqli_stmt_init($conn);
 		if (!mysqli_stmt_prepare($stmt, $sql)){
 			echo "SQL Error";
